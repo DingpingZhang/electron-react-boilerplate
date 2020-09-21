@@ -10,6 +10,7 @@ import {
   incrementAsync,
   selectCount,
 } from './counterSlice';
+import icon from '../../../resources/icon.png';
 
 export default function Counter() {
   const dispatch = useDispatch();
@@ -17,6 +18,7 @@ export default function Counter() {
   return (
     <div>
       <div className={styles.backButton} data-tid="backButton">
+        <img src={icon} alt="logo" />
         <Link to={routes.HOME}>
           <i className="fa fa-arrow-left fa-3x" />
         </Link>
