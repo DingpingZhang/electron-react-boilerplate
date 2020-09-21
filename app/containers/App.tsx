@@ -1,10 +1,4 @@
-import React, { ReactNode } from 'react';
+import { hot } from 'react-hot-loader/root';
+import Home from '../components/Home';
 
-type Props = {
-  children: ReactNode;
-};
-
-export default function App(props: Props) {
-  const { children } = props;
-  return <>{children}</>;
-}
+export default hot(Home);
